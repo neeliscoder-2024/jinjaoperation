@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nested-if-else</title>
+</head>
+<body>
+    {% if language == 'python' %}
+        <center><h1>Good in {{language}}</h1></center>
+        {% if language1 == 'html' %}
+            <p>frontend developer in {{language1}}</p>
+        {% else %}
+            <p>sql</p>
+        {% endif %}
+    {% else %}
+        {% if language2 == 'css' %}
+            <p>designing part of frontend is {{language2}}</p>
+        {% else %}
+            <p>Not a frontend </p>
+        {% endif %}
+    {% endif %}
+</body>
+</html>
